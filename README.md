@@ -4,6 +4,8 @@
 
 **VueFolio** is a dynamic portfolio crafted to showcase proficiency and continuous learning in Vue.js. It's built using **Vite** for a lightning-fast development and build process, styled with the utility-first **TailwindCSS**, and employs **Pinia** for intuitive state management. The primary goal is to demonstrate a deep understanding of Vue.js features, best practices, and emerging trends, while also highlighting these modern tools and libraries.
 
+🌐 **Live Deployment**: [VueFolio on Vercel](https://vue-folio-delta.vercel.app/)
+
 ## 🌟 Features
 
 - Comprehensive showcase of core Vue.js features.
@@ -20,3 +22,11 @@
    ```bash
    git clone https://github.com/heshamelmasry77/VueFolio.git
    cd VueFolio
+## 📦 Install Dependencies
+```bash
+yarn install
+```
+## 🚀 Run the Development Server
+```bash
+yarn dev
+```
