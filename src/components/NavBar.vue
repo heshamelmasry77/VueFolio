@@ -52,9 +52,15 @@ import {
   HomeIcon,
   BookOpenIcon,
 } from '@heroicons/vue/24/outline'
+import {computed} from 'vue';
+import {useUserStore} from '../store/userStore';
+
+// Inside your setup function or script setup block
+const userStore = useUserStore();
+const totalUsers = computed(() => userStore.getTotalUsers);
 
 const navigation = [
-  {name: 'Dashboard', path: '/', icon: HomeIcon, count: '12'},
+  {name: 'Dashboard', path: '/', icon: HomeIcon, count: totalUsers},
   {name: 'About', path: 'about', icon: CalendarIcon},
 ]
 </script>
