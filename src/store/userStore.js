@@ -6,10 +6,14 @@ export const useUserStore = defineStore({
     state: () => ({
         users: [],
         loading: false,
+        singleUser: {}
     }),
     getters: {
-        getUsers(state){
+        getUsers(state) {
             return state.users
+        },
+        getUserDetails(state) {
+            return state.singleUser
         },
         getTotalUsers(state) {
             return state.users.length;
@@ -23,6 +27,17 @@ export const useUserStore = defineStore({
                 this.users = response.data.data;
             } catch (error) {
                 console.error("Error fetching users:", error);
+            } finally {
+                this.loading = false;
+            }
+        },
+        async fetchUserById(id) {
+            this.loading = true;
+            try {
+                const response = await axios.get(`https://reqres.in/api/users/${id}`);
+                this.singleUser = response.data.data;
+            } catch (error) {
+                console.error("Error fetching user by id:", error);
             } finally {
                 this.loading = false;
             }
