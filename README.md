@@ -2,7 +2,7 @@
 
 ![Vue.js Badge](https://img.shields.io/badge/Vue.js-4.x-brightgreen.svg) ![Maintenance](https://img.shields.io/maintenance/yes/2023.svg) ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
-**VueFolio** is a dynamic portfolio crafted to showcase proficiency and continuous learning in Vue.js. It's built using **Vite** for a lightning-fast development and build process, styled with the utility-first **TailwindCSS**, and employs **Pinia** for intuitive state management. The primary goal is to demonstrate a deep understanding of Vue.js features, best practices, and emerging trends, while also highlighting these modern tools and libraries.
+**VueFolio** is a dynamic portfolio crafted to showcase proficiency and continuous learning in Vue.js. Integrated with the **ReqRes API**, it provides real-time data interactions to simulate real-world applications. It's built using **Vite** for a lightning-fast development and build process, styled with the utility-first **TailwindCSS**, and employs **Pinia** for intuitive state management. The primary goal is to demonstrate a deep understanding of Vue.js features, best practices, and emerging trends, while also highlighting these modern tools and libraries. This integration showcases not only the frontend prowess but also the capability to communicate effectively with backend services, giving a holistic view of modern web application development.
 
 🌐 **Live Deployment**: [VueFolio on Vercel](https://vue-folio-delta.vercel.app/)
 
